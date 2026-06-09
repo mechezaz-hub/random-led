@@ -1,6 +1,6 @@
 let Led = 0
 input.onPinPressed(TouchPin.P2, function () {
-    Led = randint(1, 5)
+    Led = randint(1, 6)
     if (Led == 1) {
         basic.showLeds(`
             . # . # .
@@ -40,6 +40,14 @@ input.onPinPressed(TouchPin.P2, function () {
             . . . . .
             # . . . #
             . # # # .
+            `)
+    } else if (Led == 6) {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            . . . . .
+            . # # # .
+            # . . . #
             `)
     }
 })
